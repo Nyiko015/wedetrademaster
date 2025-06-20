@@ -4,29 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TradeMaster - Professional Trading Platform</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Assuming you'll add CSS later -->
+        <link rel="stylesheet" href="style.css"> <!-- Assuming you'll add CSS later -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
          <!--Header/Navigation-->
-         <header>
-            <div class="container">
-             <div class="logo">
-                <h1>Trade<span>Master</span></h1>
-             </div>
-             <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-             </nav>
-             <div class="auth-buttons">
-                <button class="btn login">Log in</button>
-                <button class="btn signup">Sign up</button>
-             </div>
-            </div>
-         </header>
+        <header>
+  <div class="container">
+    <div class="logo">
+      <h1>Trade<span>Master</span></h1>
+    </div>
+
+    <!-- Responsive Nav Toggle Button -->
+    <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="auth-buttons">
+      <button class="btn login">Log in</button>
+      <button class="btn signup">Sign up</button>
+    </div>
+  </div>
+</header>
 
          <!--hero section-->
          <section class="hero">
@@ -77,5 +85,6 @@
                 </div>
             </div>
          </footer>
+             <script src="script.js"></script>
     </body>
 </html>

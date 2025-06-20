@@ -24,7 +24,7 @@ header {
 }
 
 .logo h1 span {
-    color: #00cc00;
+    color: #e60e20;
 }
 
 nav ul {
@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    color: #00cc00;
+    color: #eb1010;
     font-weight: bold;
 }
 
@@ -64,8 +64,8 @@ nav ul li a.active {
 }
 
 .btn.signup {
-    background: #00cc00;
-    color: white;
+    background: #ffffff;
+    color: rgb(26, 22, 22);
 }
 
 /* Hero Section */
@@ -81,7 +81,7 @@ nav ul li a.active {
 }
 
 .btn.primary {
-    background: #00cc00;
+    background: #ff0000;
     color: white;
 }
 
@@ -142,3 +142,269 @@ footer {
     margin: 0 10px;
     color: white;
 }
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.logo span {
+    color: #d11919;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #223131;
+    border-radius: 5px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.login {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.signup {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.login:hover {
+    background-color: #fff;
+    color: #1f2937;
+}
+
+.signup:hover {
+    background-color: #ff0000;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1f2937;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    color: #fa0606;
+}
+
+.footer-col p,
+.footer-col ul {
+    font-size: 14px;
+    color: #1b1919;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #1b1a1a;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff0000;
+}
+
+.social-links a {
+    color: #1a1818;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff0000;
+}
+
+.footer-col .contact-info li i {
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full screen height */
+            background-color: white;
+        }
+
+        .logo-image {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05);
+        }
+        
